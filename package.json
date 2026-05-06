@@ -1,0 +1,15 @@
+{
+  "name": "tufact",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm run -r --parallel --filter \"./apps/**\" dev",
+    "dev:api": "pnpm --filter @tufact/api dev",
+    "dev:mobile": "pnpm --filter @tufact/mobile dev",
+    "build": "pnpm -r build",
+    "db:generate": "pnpm --filter @tufact/api db:generate",
+    "db:push": "pnpm --filter @tufact/api db:push",
+    "db:studio": "pnpm --filter @tufact/api db:studio",
+    "lint": "pnpm -r lint"
+  },
+  "packageManager": "pnpm@10.33.3"
+}
